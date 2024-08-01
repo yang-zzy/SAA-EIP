@@ -1,0 +1,7 @@
+numpy==1.26.1
+pandas==2.0.1
+Pillow
+timm==0.9.16
+torch==2.0.0
+torchvision==0.15.1
+tqdm
