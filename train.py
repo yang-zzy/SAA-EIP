@@ -9,7 +9,7 @@ from torch.utils.data import DataLoader
 from torchvision import transforms, models
 from tqdm import tqdm
 
-import separable_laa
+import separable_aa
 from dataset import *
 import prompters
 from utils import *
@@ -74,7 +74,7 @@ class PromptTrainer(object):
             self.average_meters[meter].reset()
 
     def get_model(self):
-        model = separable_laa.lightweight_model(num_classes=self.num_classes, extra_method=self.config['method'],
+        model = separable_aa.lightweight_model(num_classes=self.num_classes, extra_method=self.config['method'],
                                                 meta_len=self.config['meta_len'])
         return model
 
