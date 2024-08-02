@@ -1,5 +1,5 @@
 
-# Enhanced ViT for FGVC Tasks with SAA & EIP
+# Enhanced Lightweight ViT for FGVC Tasks with SAA & EIP
 
 ### Introduction
 
@@ -34,4 +34,4 @@ python3 train.py --epoch 100 --num-classes 200 --mask-type linear --data-dir "./
 ```
 
 ### Acknowledgement
-Many thanks for [DCL](https://github.com/JDAI-CV/DCL) and [EfficientFormer](https://github.com/snap-research/EfficientFormer).A part of the code is borrowed from them.
+Many thanks for [DCL](https://github.com/JDAI-CV/DCL) and [EfficientFormer](https://github.com/snap-research/EfficientFormer). A part of the code is borrowed from them.
