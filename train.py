@@ -193,6 +193,8 @@ class PromptTrainer(object):
             cur_mask_prob = self.mask_prob * (1 - self.epoch / self.total_epoch)
         elif self.mask_type == "cosine":
             cur_mask_prob = self.mask_prob * (0.5 * (math.cos(self.epoch / self.total_epoch * math.pi) + 1))
+        elif self.mask_type == 'step':
+            cur_mask_prob = self.mask_prob * (0.6 ** (self.epoch // 20))
         else:
             cur_mask_prob = self.mask_prob
         if cur_mask_prob != 0:
